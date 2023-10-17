@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <div class="container-center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Login</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <form [formGroup]="loginForm"  (ngSubmit)="loginUser()" >
+          <ion-list>
+            <ion-item lines="none">
+              <ion-input label="Email" type="email" labelPlacement="floating" placeholder="Enter your Email"
+                formControlName="email" errorText="Invalid email"></ion-input>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-input label="Password" type="password" labelPlacement="floating" placeholder="*********"
+                formControlName="password" errorText="Invalid Password"></ion-input>
+            </ion-item>
+          </ion-list>
+
+          <ion-button type="submit" color="success" shape="round" size="full">Login</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
