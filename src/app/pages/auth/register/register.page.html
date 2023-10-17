@@ -7,7 +7,7 @@
 
       <ion-card-content>
 
-        <form [formGroup]="loginForm"  (ngSubmit)="loginUser()" >
+        <form [formGroup]="registerForm"  (ngSubmit)="registerUser()" >
           <ion-list>
             <ion-item lines="none">
               <ion-input label="Email" type="email" labelPlacement="floating" placeholder="Enter your Email"
@@ -20,7 +20,7 @@
             </ion-item>
 
             <ion-item lines="none">
-              <ion-input label="Password" type="password" labelPlacement="floating" placeholder="*********"
+              <ion-input label="Confirm Password" type="password" labelPlacement="floating" placeholder="*********"
                 formControlName="conf_password" errorText="Password Not Match"></ion-input>
             </ion-item>
           </ion-list>

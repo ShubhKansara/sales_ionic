@@ -17,9 +17,18 @@ export class RegisterPage implements OnInit {
 
   initializeForm() {
     this.registerForm = this.fb.group({
-      email: ['',[ Validators.required, Validators.email]],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]],
       conf_password: ['', [Validators.required]]
     })
   }
+
+  registerUser() {
+    if (!this.registerForm.valid) {
+      console.log("not valid");
+      return;
+    }
+    console.log("valid...");
+  }
+
 }
