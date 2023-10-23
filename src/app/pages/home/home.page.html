@@ -12,12 +12,12 @@
   </ion-header>
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button (click)="setOpen(true)" expand="block">
+    <ion-fab-button (click)="goToCreateSurvey()" expand="block">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 
-  <ion-modal [isOpen]="isModalOpen" (willDismiss)="onWillDismiss($event)">
+  <!-- <ion-modal [isOpen]="isModalOpen" (willDismiss)="onWillDismiss($event)">
     <ng-template>
       <ion-header>
         <ion-toolbar>
@@ -52,13 +52,13 @@
             <ion-button (click)="setMapModelOpen(true)">select Coordinates</ion-button>
           </ion-item>
         </form>
-        <!-- <capacitor-google-map #map></capacitor-google-map> -->
+         <capacitor-google-map #map></capacitor-google-map>
       </ion-content>
     </ng-template>
-  </ion-modal>
+  </ion-modal> -->
 
 
-  <ion-modal [isOpen]="isMapModelOpen" (willDismiss)="onWillDismiss($event)">
+  <!-- <ion-modal [isOpen]="isMapModelOpen" (willDismiss)="onWillDismiss($event)">
     <ng-template>
       <ion-header>
         <ion-toolbar>
@@ -75,5 +75,5 @@
         <capacitor-google-map #map></capacitor-google-map>
       </ion-content>
     </ng-template>
-  </ion-modal>
+  </ion-modal> -->
 </ion-content>

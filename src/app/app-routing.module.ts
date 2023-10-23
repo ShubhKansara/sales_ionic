@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },   {
+    path: 'create-survey',
+    loadChildren: () => import('./pages/survey/create/create.module').then( m => m.CreatePageModule)
   },
+
 ];
 
 @NgModule({
